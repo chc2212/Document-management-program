@@ -1,0 +1,158 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }  
+         
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>test1.sikuli\test1.sikuli</h2> <a href="test1.sikuli\test1.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+<span class="kw">import</span> random
+count_up, count_down,count_enter,count_arr=<span class="dig">0</span>,<span class="dig">0</span>,<span class="dig">0</span>,<span class="dig">0</span>
+word=[<span class="str">"that"</span>, <span class="str">"com"</span>,<span class="str">"windows"</span>,<span class="str">"year"</span>,<span class="str">"send"</span>,<span class="str">"time"</span>,<span class="str">"home"</span>,<span class="str">"mom"</span>,<span class="str">"tion"</span>,<span class="str">"week"</span>,<span class="str">"hour"</span>,<span class="str">"thousand"</span>,<span class="str">"suddenly"</span>,<span class="str">"little"</span>,<span class="str">"wit"</span>,<span class="str">"then"</span>,<span class="str">"data"</span>,<span class="str">"before"</span>,<span class="str">"only"</span>,<span class="str">"hh"</span>,<span class="str">"as"</span>,<span class="str">"gift"</span>,<span class="str">"look"</span>,<span class="str">"respond"</span>,<span class="str">"thata"</span>,<span class="str">"afford"</span>,<span class="str">"it"</span>,<span class="str">"was"</span>,<span class="str">"no"</span>,<span class="str">"well"</span>,<span class="str">"fix"</span>,<span class="str">"cnask"</span>,<span class="str">"nuy"</span>,<span class="str">"ahead"</span>,<span class="str">"thanks"</span>,<span class="str">"leave"</span>,<span class="str">"hello"</span>,<span class="str">"greenly"</span>,<span class="str">"mouth"</span>,<span class="str">"bed"</span>,<span class="str">"wow"</span>,<span class="str">"dad"</span>,<span class="str">"lid"</span>,<span class="str">"wrong"</span>,<span class="str">"true"</span>,<span class="str">"embarrassed"</span>,<span class="str">"planet"</span>,<span class="str">"really"</span>,<span class="str">"suffer"</span>,<span class="str">"wet"</span>]
+count=<span class="dig">0</span>
+
+
+<span class="kw">while</span> count &lt; <span class="dig">30</span>:
+    count=count+<span class="dig">1</span>
+
+    <span class="kw">if</span> exists(<img src="1340531067611.png" />):
+        count_arr=count_arr+<span class="dig">1</span>
+        k=random.randint(<span class="dig">1</span>,<span class="dig">3</span>)<span class="cmt">#문자열 종류 결정</span>
+        k1=random.randint(<span class="dig">1</span>,<span class="dig">5</span>)<span class="cmt">#폴더경로형 문자열 샘플</span>
+        k2=random.randint(<span class="dig">1</span>,<span class="dig">6</span>)<span class="cmt">#파일경로형 문자열 샘플</span>
+        k3=random.randint(<span class="dig">0</span>,<span class="dig">49</span>)<span class="cmt">#단어 샘플</span>
+
+        <span class="kw">if</span> k==<span class="dig">1</span>:
+
+            <span class="kw">if</span> k1==<span class="dig">1</span>:
+                <span class="skw">type</span>(<span class="str">"c:/program files"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+            <span class="kw">if</span> k1==<span class="dig">2</span>:
+                <span class="skw">type</span>(<span class="str">"c:/test1"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+            <span class="kw">if</span> k1==<span class="dig">3</span>:
+                <span class="skw">type</span>(<span class="str">"c:/test2"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+            <span class="kw">if</span> k1==<span class="dig">4</span>:
+                <span class="skw">type</span>(<span class="str">"c:/test3"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+
+        <span class="kw">if</span> k==<span class="dig">2</span>:
+
+            <span class="kw">if</span> k2==<span class="dig">1</span>:
+                <span class="skw">type</span>(<span class="str">"c:/log.txt"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+            <span class="kw">if</span> k2==<span class="dig">2</span>:
+                <span class="skw">type</span>(<span class="str">"c:/test1/test.txt"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+            <span class="kw">if</span> k2==<span class="dig">3</span>:
+                <span class="skw">type</span>(<span class="str">"c:/test2/test.txt"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+            <span class="kw">if</span> k2==<span class="dig">4</span>:
+                <span class="skw">type</span>(<span class="str">"c:/test3/test2.txt"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+            <span class="kw">if</span> k2==<span class="dig">5</span>:
+                <span class="skw">type</span>(<span class="str">"c:/java.txt"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+            <span class="kw">if</span> k2==<span class="dig">6</span>:
+                <span class="skw">type</span>(<span class="str">"c:/test4/pro.txt"</span>)
+                <span class="skw">type</span>(Key.ENTER)
+
+
+        <span class="kw">if</span> k==<span class="dig">3</span>:
+            <span class="skw">type</span>(word[k3])
+            <span class="skw">type</span>(Key.ENTER)
+
+    <span class="kw">elif</span> exists(<img src="CU-3.png" />):
+
+        i=random.randint(<span class="dig">1</span>,<span class="dig">100</span>)
+        <span class="cmt">#print i
+</span>        <span class="kw">if</span> i&lt;=<span class="dig">10</span>:
+            <span class="skw">type</span>(Key.UP)
+            count_up=count_up+<span class="dig">1</span>
+
+        <span class="kw">if</span> i&gt;<span class="dig">10</span> <span class="kw">and</span> i&lt;=<span class="dig">70</span>:
+            <span class="skw">type</span>(Key.DOWN)
+            count_down=count_down+<span class="dig">1</span>
+
+        <span class="kw">if</span> i&gt;<span class="dig">70</span> <span class="kw">and</span> i&lt;=<span class="dig">100</span>:
+            <span class="cmt">#print "test"
+</span>            <span class="skw">type</span>(Key.ENTER)
+            count_enter=count_enter+<span class="dig">1</span>
+
+
+
+
+
+
+<span class="kw">print</span> count_up
+<span class="kw">print</span> count_down
+<span class="kw">print</span> count_enter
+<span class="kw">print</span> count_arr
+</pre>
+</body>
+</html>
